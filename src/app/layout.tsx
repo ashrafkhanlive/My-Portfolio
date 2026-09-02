@@ -9,8 +9,6 @@ import { generateMetadata as getMetadata } from '@/config/Meta';
 import ReactLenis from 'lenis/react';
 import { ViewTransitions } from 'next-view-transitions';
 
-// Next.js loads global CSS at runtime; TypeScript has no module declaration for this side-effect import.
-// @ts-expect-error CSS files are handled by Next.js.
 import './globals.css';
 
 export const metadata = getMetadata('/');
