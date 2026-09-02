@@ -1,0 +1,141 @@
+
+> sleek-portfolio@0.1.0 dev
+> next dev --turbopack -p 3000
+
+   ▲ Next.js 15.5.18 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.224.167.183:3000
+
+ ✓ Starting...
+ ✓ Ready in 5s
+ ○ Compiling /blog/[slug] ...
+ ✓ Compiled /blog/[slug] in 9.6s
+ GET /blog/my-journey 200 in 29573ms
+ GET /blog/my-journey 200 in 1121ms
+ ○ Compiling /_not-found/page ...
+ GET /blog/my-journey 200 in 5142ms
+ ✓ Compiled /_not-found/page in 3s
+ GET /blog/oneko/oneko.js 404 in 3561ms
+ GET /certificates/ssoc-piyush.png 404 in 924ms
+ ○ Compiling /journey ...
+ ✓ Compiled /journey in 1229ms
+ GET /journey 200 in 1818ms
+ GET /certificates/ssoc-piyush.png 404 in 636ms
+ ○ Compiling /favicon.ico ...
+ GET /certificates/ssoc-piyush.png 404 in 1085ms
+ ✓ Compiled /favicon.ico in 1639ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 2402ms
+ GET /favicon.ico 200 in 2110ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 599ms
+ ○ Compiling / ...
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 614ms
+ ✓ Compiled / in 2.3s
+ GET / 200 in 2881ms
+ ○ Compiling /blog ...
+ ✓ Compiled /blog in 1008ms
+ GET /blog 200 in 1435ms
+ GET /blog/how-to-be-me 200 in 1155ms
+ GET / 200 in 633ms
+ GET /journey 200 in 297ms
+ GET /certificates/ssoc-piyush.png 404 in 765ms
+ GET /blog/my-journey 200 in 1304ms
+ GET /blog/my-journey 200 in 3974ms
+ GET /blog/oneko/oneko.js 404 in 1233ms
+ GET / 200 in 515ms
+ GET /journey 200 in 278ms
+ GET /certificates/ssoc-piyush.png 404 in 963ms
+ GET /journey 200 in 271ms
+ GET /certificates/ssoc-piyush.png 404 in 1056ms
+ ○ Compiling /journey/certificates ...
+ ✓ Compiled /journey/certificates in 878ms
+ GET /journey/certificates 200 in 1087ms
+ GET /blog/my-journey 200 in 1231ms
+ GET /journey 200 in 297ms
+ GET /certificates/ssoc-piyush.png 404 in 725ms
+ GET /journey 200 in 387ms
+ GET /journey 200 in 2530ms
+ GET / 200 in 346ms
+ GET /blog 200 in 204ms
+ ✓ Compiled in 425ms
+ ✓ Compiled in 748ms
+ ✓ Compiled /blog in 256ms
+ GET /blog 200 in 1112ms
+ GET /journey 200 in 1084ms
+ ✓ Compiled in 357ms
+ ✓ Compiled /blog in 169ms
+ GET /blog 200 in 1216ms
+ GET /journey 200 in 1241ms
+ GET /blog 200 in 685ms
+ GET /blog 200 in 764ms
+ ○ Compiling /work-experience ...
+ ✓ Compiled /work-experience in 661ms
+ GET /work-experience 200 in 932ms
+ GET / 200 in 394ms
+ GET /journey 200 in 251ms
+ GET /blog 200 in 250ms
+ GET / 200 in 528ms
+ GET /blog/how-to-be-me 200 in 1102ms
+ GET / 200 in 7381ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 854ms
+ GET /favicon.ico 200 in 1129ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 1444ms
+ ✓ Compiled in 738ms
+ ✓ Compiled / in 374ms
+ GET /journey 200 in 2374ms
+ GET / 200 in 3154ms
+ GET / 200 in 2488ms
+ GET /blog 200 in 261ms
+ ○ Compiling /projects ...
+ ✓ Compiled /projects in 863ms
+ GET /projects 200 in 1054ms
+ GET /work-experience 200 in 389ms
+ GET /blog 200 in 279ms
+ GET / 200 in 463ms
+ GET /journey 200 in 375ms
+ ✓ Compiled in 583ms
+ ✓ Compiled /journey in 142ms
+ GET /journey 200 in 2151ms
+ GET /journey 200 in 2198ms
+ GET /journey 200 in 1058ms
+ GET /journey 200 in 1041ms
+ GET /journey 200 in 1131ms
+ GET /journey 200 in 1135ms
+ GET /journey 200 in 792ms
+ GET /journey 200 in 816ms
+ GET /journey 200 in 890ms
+ GET /journey 200 in 890ms
+ GET /journey 200 in 573ms
+ GET /journey 200 in 593ms
+ GET /journey 200 in 973ms
+ GET /journey 200 in 1069ms
+ GET /journey 200 in 956ms
+ GET /journey 200 in 894ms
+ ✓ Compiled in 545ms
+ GET /journey 200 in 1045ms
+ GET /journey 200 in 1046ms
+ ✓ Compiled / in 129ms
+ GET / 200 in 3506ms
+ GET / 200 in 494ms
+ GET / 200 in 509ms
+ GET / 200 in 504ms
+ ✓ Compiled /projects in 119ms
+ GET /projects 200 in 272ms
+ ✓ Compiled /work-experience in 127ms
+ GET /work-experience 200 in 486ms
+ GET / 200 in 571ms
+ ✓ Compiled in 283ms
+ ✓ Compiled in 310ms
+ GET / 200 in 3156ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 851ms
+ GET /favicon.ico 200 in 620ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 764ms
+ GET /journey 200 in 426ms
+ ✓ Compiled in 280ms
+ GET /journey 200 in 2294ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 523ms
+ GET /favicon.ico 200 in 538ms
+ GET /favicon.ico?favicon.bac5743a.ico 200 in 521ms
+ GET /projects 200 in 260ms
+ ○ Compiling /projects/[slug] ...
+ ✓ Compiled /projects/[slug] in 697ms
+ GET /projects/staynest 200 in 2624ms

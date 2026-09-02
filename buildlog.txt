@@ -1,0 +1,59 @@
+
+> sleek-portfolio@0.1.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of c:\Users\pc\Desktop\30 Days Coding\my potf\package-lock.json as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * c:\Users\pc\Desktop\30 Days Coding\my potf\Ashraf-Portfolio\package-lock.json
+
+   ▲ Next.js 15.5.18
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 10.5s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/34) ...
+   Generating static pages (8/34) 
+   Generating static pages (16/34) 
+   Generating static pages (25/34) 
+ ✓ Generating static pages (34/34)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                    Size  First Load JS
+┌ ○ /                                         11 kB         160 kB
+├ ○ /_not-found                                1 kB         103 kB
+├ ƒ /api/chat                                 128 B         102 kB
+├ ƒ /api/contact                              128 B         102 kB
+├ ○ /blog                                   5.55 kB         126 kB
+├ ● /blog/[slug]                            14.8 kB         160 kB
+├   ├ /blog/better-frontend-part-1
+├   ├ /blog/how-to-be-me
+├   ├ /blog/javascript-for-frontend-part-1
+├   └ [+2 more paths]
+├ ○ /contact                                  34 kB         145 kB
+├ ○ /gears                                  2.25 kB         117 kB
+├ ○ /journey                                1.99 kB         136 kB
+├ ○ /journey/certificates                   3.16 kB         133 kB
+├ ○ /projects                               2.37 kB         152 kB
+├ ● /projects/[slug]                        4.48 kB         141 kB
+├   ├ /projects/appwrite-mcp-server
+├   ├ /projects/chill-guy
+├   ├ /projects/e-commerce-platform
+├   └ [+10 more paths]
+├ ○ /resume                                   845 B         112 kB
+├ ○ /setup                                  1.14 kB         116 kB
+└ ○ /work-experience                        2.46 kB         139 kB
++ First Load JS shared by all                102 kB
+  ├ chunks/255-e881f48ae1d2333a.js            46 kB
+  ├ chunks/4bd1b696-409494caf8c83275.js     54.2 kB
+  └ other shared chunks (total)             2.03 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

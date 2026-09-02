@@ -1,0 +1,139 @@
+---
+title: 'E-Commerce Platform'
+description: 'A full-featured e-commerce platform for browsing products, managing carts, processing payments, and handling orders.'
+image: '/project/ecommerce-platform.png'
+technologies:
+  [
+    'React',
+    'Redux',
+    'Material UI',
+    'Spring Boot',
+    'Spring Security',
+    'PostgreSQL',
+    'Redis',
+    'AWS S3',
+    'Stripe',
+  ]
+github: ''
+live: ''
+timeline: 'Planned build'
+role: 'Full Stack'
+team: 'Solo'
+status: 'in-progress'
+featured: true
+challenges:
+  [
+    'Secure authentication and role-based authorization',
+    'Persistent cart state across sessions',
+    'Reliable order and payment state handling',
+    'Fast product search with cache-aware reads',
+  ]
+learnings:
+  [
+    'Implementing secure authentication with Spring Security',
+    'Working with Stripe payment flows',
+    'Managing complex frontend state with Redux',
+    'Optimizing database queries and cache strategy',
+  ]
+isPublished: true
+---
+
+# E-Commerce Platform: Secure Storefront and Order Engine
+
+## Overview
+
+This e-commerce platform is designed as a complete shopping experience: users can browse products, filter categories, manage a persistent cart, complete Stripe payments, and receive order updates after checkout.
+
+The system is split into a React frontend and a Spring Boot backend, with PostgreSQL handling durable data, Redis speeding up high-traffic reads, and AWS S3 storing product images.
+
+## Core Features
+
+- User registration and authentication
+- Role-based access control for customers, admins, and operators
+- Profile management for account details and order history
+- Product CRUD operations for admin users
+- Category management, search, filtering, and sorting
+- Image upload and product media management through AWS S3
+- Add, remove, and update cart items
+- Quantity management with server-side price validation
+- Persistent cart behavior across sessions
+- Stripe checkout and payment confirmation
+- Order processing with invoice generation
+- Email notifications for checkout and order status changes
+
+## Technical Stack
+
+### Frontend
+
+- **React.js** for the user interface
+- **Redux** for cart, auth, checkout, and product state
+- **Material UI** for accessible, consistent interface components
+
+### Backend
+
+- **Spring Boot** for REST APIs and business workflows
+- **Spring Security** for authentication, JWT handling, and role-based access
+- **PostgreSQL** for users, products, orders, invoices, and payments
+
+### Infrastructure
+
+- **Redis** for caching product listings, categories, and session-adjacent reads
+- **AWS S3** for product image storage and retrieval
+- **Stripe** for payment gateway integration
+
+## Domain Model
+
+The backend revolves around a few clear entities:
+
+- **User**: account, profile, credentials, and roles
+- **Product**: catalog item, pricing, stock status, category, and image references
+- **Category**: product grouping and filtering surface
+- **Cart**: active shopping basket tied to a user or session
+- **Cart Item**: product, selected quantity, and price snapshot
+- **Order**: confirmed checkout record and fulfillment state
+- **Payment**: Stripe intent status, amount, and transaction reference
+- **Invoice**: generated proof of purchase sent after successful payment
+
+## Authentication and Authorization
+
+Users register and sign in through the Spring Boot API. Spring Security protects sensitive routes with JWT-based authentication, while role checks separate customer workflows from admin-only operations like product management and category updates.
+
+This creates a clean permission boundary:
+
+- Customers manage profiles, carts, and orders
+- Admins manage products, categories, and catalog assets
+- Internal operators can review order and payment states
+
+## Product Management
+
+Admins can create, update, delete, and organize products. Product images are uploaded to AWS S3, while the database stores stable object URLs and metadata. Search and filtering are backed by PostgreSQL queries, with Redis used for cacheable catalog reads.
+
+## Shopping Cart
+
+The cart is designed to stay consistent across devices and sessions. Frontend state gives the user immediate feedback, while the backend remains the source of truth for price calculations, stock checks, and final checkout totals.
+
+## Payment and Order Flow
+
+Stripe handles payment intent creation and confirmation. After payment success, the backend creates an order, stores the payment reference, generates an invoice, and sends an email notification.
+
+The order flow is designed to avoid common checkout problems:
+
+- Recalculate totals before payment
+- Validate inventory before order creation
+- Store Stripe payment status separately from order status
+- Generate invoices only after confirmed payment
+- Send customer emails from backend events
+
+## Performance Strategy
+
+Product listing, category navigation, and frequently requested catalog data can be cached with Redis. Database indexes should focus on category, price, stock state, and searchable product fields so browsing remains responsive as the catalog grows.
+
+## Learning Outcomes
+
+This build focuses on practical full-stack concepts:
+
+- Implementing secure authentication and authorization
+- Designing payment gateway flows with Stripe
+- Managing complex frontend state across cart and checkout flows
+- Optimizing relational database queries
+- Introducing Redis caching without letting cache data become the source of truth
